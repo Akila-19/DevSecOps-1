@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-
+        sonarScanner 'SonarScanner'
         nodejs 'NodeJS-18' 
     }
     stages {
