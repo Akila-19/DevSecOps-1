@@ -30,7 +30,7 @@ pipeline {
         stage('Static Analysis (SonarQube)') {
             steps {
                 // Wrapper to use the SonarQube server details (URL/Token)
-                withSonarQubeEnv('SonarQube-Quality-Gate') {
+                withSonarQubeEnv('SonarQube') {
                     // Execute the SonarQube analysis
                     sh "sonar-scanner \
                         -Dsonar.projectKey=devsecops-node \
