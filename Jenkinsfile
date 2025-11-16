@@ -1,8 +1,8 @@
 pipeline {
     agent any
     tools {
-        sonarScanner 'SonarScanner'
         nodejs 'NodeJS-18' 
+        sonarRunner 'SonarScanner'
     }
     stages {
         stage('SCM Checkout') {
