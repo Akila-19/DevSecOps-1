@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {
         nodejs 'NodeJS-18' 
-        sonar 'SonarScanner'
+        hudson.plugins.sonar.SonarRunnerInstallation 'SonarScanner'
     }
     stages {
         stage('SCM Checkout') {
